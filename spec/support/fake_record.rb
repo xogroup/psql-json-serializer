@@ -1,0 +1,6 @@
+require "support/tables/user"
+require "support/tables/product"
+require "support/fake_record/base"
+require "support/fake_record/connection_pool"
+require "support/fake_record/connection"
+require "support/fake_record/column"

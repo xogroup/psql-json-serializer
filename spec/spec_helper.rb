@@ -1,5 +1,10 @@
 require "bundler/setup"
 require "psql/json/serializer"
+require "arel"
+require "pry"
+require "support/fake_record"
+
+Arel::Table.engine = FakeRecord::Base.new
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
